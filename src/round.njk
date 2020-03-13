@@ -1,0 +1,14 @@
+<h1>round.njk</h1>
+<pre>function round(value, precision=0, method=Math.round) {}</pre>
+
+<pre>{{ 1.2 | round(0, "ceil") }}</pre>
+<!-- Expected: 2 -->
+
+<pre>{{ 2.0 | round(0, "ceil") }}</pre>
+<!-- Expected: 2 -->
+
+<pre>{{ 183.357 | round(0, "ceil") }}</pre>
+<!-- Expected: 184 -->
+
+<pre>{{ "3.5" | round(0, "ceil") }}</pre>
+<!-- Expected: 4 -->
